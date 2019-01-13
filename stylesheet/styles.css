@@ -1,0 +1,882 @@
+@import url("https://use.typekit.net/drj6tmp.css");
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono|Pacifico');
+
+body {
+    font-family: 'Museo Sans', sans-serif;
+}
+
+.wrapper {
+    max-width: 74em;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*------------------------header-------------------*/
+
+
+header {
+    max-width: 74em;
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 1fr;
+
+}
+
+header h2 {
+    font-weight: 500;
+    grid-row: 1;
+    font-size: 1.2em;
+    grid-column: 2/5;
+    margin: 0;
+    color: rgba(153, 37, 141, 1);
+    display: inline-flex;
+    justify-content: center;
+
+}
+
+/*header van de verhalen pagina*/
+.verhaaal header > nav img {
+    height: 2rem;
+
+}
+
+.logo {
+    grid-row: 1;
+    grid-column: 3;
+    width: 3em;
+    height: 3em;
+    justify-self: center;
+    margin-left: 1.1rem
+}
+
+header > a {
+    grid-row: 1;
+    grid-column: 6;
+    width: 5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.6em;
+    line-height: 1;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #020303;
+    margin-left: -6rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+/*navigatie*/
+nav {
+    grid-row: 2;
+    grid-column: 1/6;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-weight: 300;
+    font-size: 0.6em;
+    margin: 0;
+    padding: 0;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+nav a {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 1 / 6;
+    grid-row: 2;
+
+}
+
+nav a:hover {
+    color: #99258d;
+    font-weight: 900;
+}
+
+nav a:active {
+    color: #99258d;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: #020303;
+}
+
+a > img {
+    grid-column: 1 / 6;
+    grid-row: 1;
+    height: 1.2rem;
+    margin-bottom: 0.5rem;
+    justify-self: center;
+}
+
+
+/*------------------------main-------------------*/
+/*-------------section-----------*/
+
+/*------quiz-----*/
+section:nth-child(1) {
+    max-width: 50em;
+}
+
+/*------filter-----*/
+section:nth-child(-n+2) {
+    background-color: #fafafa;
+    padding: 2%;
+    min-width: auto;
+    border: 1px solid #eee;
+    box-shadow: 4px 4px 0 rgba(237, 237, 237, 0.5);
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 2em;
+}
+
+/*------verhalen overzicht-----*/
+section:last-of-type h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgba(153, 37, 141, 1);
+    padding-left: 0.5rem;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+section:last-of-type p {
+    font-size: 1rem;
+    padding: 0.2rem 1rem 1rem 0.5rem;
+    margin: 0;
+}
+
+section:last-of-type a {
+    background-color: rgba(153, 37, 141, 1);
+    padding: 0.5rem;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.6em;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/*section van de verhaal detail pagina*/
+.verhaaal article {
+    line-height: 2rem;
+    font-family: sans-serif;
+    margin: 0em 2em;
+}
+
+/*section van de resultaten pagina*/
+section > ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+/*---h2, h3--*/
+section h2 {
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #6d105c;
+    padding: 1em 1em;
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+form,
+h3 {
+    margin: 0;
+    display: block;
+    line-height: 2em;
+    font-family: inherit;
+}
+
+
+h3 img {
+    height: 2.5rem;
+    margin-right: 1em;
+}
+
+h3 > button {
+    color: rgba(153, 37, 141, 1);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 3;
+    border-style: none;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+h3 > button:hover {
+    font-weight: 900;
+}
+
+h3 > button:focus {
+    font-weight: 900;
+}
+
+/*----------------------forms----------*/
+fieldset {
+    border: none;
+    margin: 0.5em 0;
+}
+
+legend {
+    margin: -0.7em;
+}
+
+label:first-child {
+    display: block;
+    margin: 0;
+}
+
+label {
+    margin-left: -0.7em;
+}
+
+
+input[type="text"] {
+    border: 1px solid #ccc;
+    left: 0;
+    padding: 1%;
+}
+
+input[placeholder] {
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 300;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    top: -99999px;
+    left: -9999px;
+}
+
+input[type="checkbox"] + label {
+    margin-right: 10px;
+    padding: 6px 10px;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(153, 37, 141, 1);
+}
+
+input[type="checkbox"]:hover + label {
+    margin-right: 10px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background-color: rgba(239, 192, 48, 0.4);
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(153, 37, 141, 1);
+}
+
+input[type="checkbox"]:focus + label {
+    font-weight: 600;
+}
+
+input[type="checkbox"]:checked + label {
+    margin-right: 10px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background-color: rgba(239, 192, 48, 1);
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+}
+
+input[type="radio"] {
+    position: absolute;
+    top: -99999px;
+    left: -9999px;
+
+}
+
+input[type="radio"] + label {
+    margin-right: 10px;
+    padding: 6px 10px;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(153, 37, 141, 1);
+}
+
+input[type="radio"]:focus + label {
+    margin-right: 10px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background-color: rgba(239, 192, 48, 0.4);
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(153, 37, 141, 1);
+}
+
+input[type="radio"]:checked + label {
+    margin-right: 10px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background-color: rgba(239, 192, 48, 1);
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+}
+
+input[type="radio"]:hover + label {
+    margin-right: 10px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background-color: rgba(239, 192, 48, 0.4);
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(153, 37, 141, 1);
+}
+
+input[type="submit"] {
+    background-color: rgba(153, 37, 141, 1);
+    border: 1px solid rgba(153, 37, 141, 1);
+    padding: 8px 10px 8px 15px;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(153, 37, 141, 1);
+    border: 4px solid rgba(153, 37, 141, 1);
+    padding: 8px 10px 8px 10px;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+input[type="submit"]:focus {
+    background-color: rgba(153, 37, 141, 1);
+    border: 4px solid rgba(153, 37, 141, 1);
+    padding: 8px 10px 8px 10px;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+input[type="text"]:valid {
+    border: 1px solid rgba(153, 37, 141, 1);
+}
+
+input:focus:invalid {
+    outline: none;
+    color: aquamarine
+}
+
+/*----------------------article----------------*/
+
+.verhalen {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    grid-gap: 0.5em;
+}
+
+article {
+    position: relative;
+}
+
+article img {
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+div > article {
+    border: 1px solid #d4e2e2;
+    padding-bottom: 1em;
+}
+
+article a:hover {
+    background-color: rgba(153, 37, 141, 1);
+    border: 3px solid rgba(153, 37, 141, 1);
+    padding: 0.5rem;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.6em;
+    font-weight: 700;
+}
+
+article a:focus {
+    background-color: rgba(153, 37, 141, 1);
+    border: 3px solid rgba(153, 37, 141, 1);
+    ;
+    padding: 0.5rem;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.6em;
+    font-weight: 700;
+}
+
+/*---switchen tussen pagina's bij artikel overzicht--*/
+ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*---buttons in tumbnail verhaal--*/
+.iconen {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    top: 5%;
+}
+
+/*---favorieten button--*/
+.verhalen button:first-of-type:hover {
+    border: none;
+    margin-right: 0.5rem;
+    padding: 1.5rem;
+    background-image: url('/images/Asset%2028.svg');
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.favoriet {
+    border: none;
+    margin-right: 0.5rem;
+    padding: 1.5rem;
+    background-image: url('/images/Asset%2011.svg');
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.favorietclick {
+    border: none;
+    margin-right: 0.5rem;
+    padding: 1.5rem;
+    background-image: url('/images/Asset%2028.svg');
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*---download button--*/
+.verhalen button:last-of-type:hover {
+    border: none;
+    padding: 1.5rem;
+    background-image: url('/images/Asset%2027.svg');
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.download:last-of-type {
+    border: none;
+    padding: 1.5rem;
+    background-image: url('/images/Asset%2010.svg');
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.downloadclick {
+    border: none;
+    padding: 1.5rem;
+    background-image: url('/images/Asset%2027.svg');
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+
+/*-----------leestijd en genre in tumbnail------------*/
+/*---leestijd--*/
+span:first-of-type {
+    margin-top: 0;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding: 4px 6px;
+    border-radius: 10px;
+    background-color: rgba(239, 192, 48, 1);
+    font-size: 0.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+}
+
+/*---genre--*/
+span:nth-of-type(2) {
+    margin-top: 0;
+    margin-right: 8px;
+    padding: 4px 6px;
+    border-radius: 10px;
+    background-color: rgba(239, 192, 48, 1);
+    font-size: 0.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+    /*position: absolute;
+    top: 13.2rem;
+    left: 17.8rem; */
+}
+
+
+
+/*-------------------verhaal detail pagina------------*/
+/*------hier zit de content van het verhaal in-----*/
+
+p {
+    margin: 1em;
+    font-size: 1em;
+
+}
+
+.zin1 {
+    font-family: 'Pacifico', cursive;
+    color: ghostwhite;
+    margin-bottom: 3em;
+}
+
+.zin2 {
+    font-family: 'Nova Mono', monospace;
+    color: black;
+}
+
+.object-wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.container2 {
+    background-size: contain;
+    max-width: 100%;
+}
+
+.container2 > img {
+    width: 620px;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+
+}
+
+/*------BRON: https://codepen.io/erlswtshrt/pen/MQOwqa-----*/
+.parallax {
+    perspective: 1px;
+    width: 100%;
+    height: 100vh;
+    max-height: 200vh;
+    overflow-x: scroll;
+    overflow-y: auto;
+}
+
+/*------als je scrollt komt elk stukje tekst omhoog, hoe groot en met welke snelheid wordt bepaalt door onderstaande classes, dit heb ik zelf aangepast naar wat ik vond passen bij het verhaal en ik heb ook skew toegevoegd om zo de content te vervormen-----*/
+/*------BRON: https://codepen.io/erlswtshrt/pen/MQOwqa-----*/
+.speed-1 {
+    transform: translateZ(-2px) scale(3) skew(10deg)
+}
+
+.speed-2 {
+    transform: translateZ(-1px) scale(3);
+}
+
+.speed-3 {
+    transform: translateZ(-2px) scale(4);
+}
+
+.speed-4 {
+    transform: translateZ(-4px) scale(5)skew(-20deg);
+}
+
+.speed-5 {
+    transform: translateZ(-3px) scale(5);
+
+}
+
+.speed-6 {
+    transform: translateZ(-3px) scale(5) skew(10deg);
+}
+
+.speed-7 {
+    transform: translateZ(-2.5px) scale(4);
+}
+
+.speed-8 {
+    transform: translateZ(-1px) scale(3);
+}
+
+.speed-9 {
+    transform: translateZ(-0px) scale(1) skew(10deg);
+}
+
+.speed-10 {
+    transform: translateZ(-0.1px) scale(1) skew(-20deg);
+}
+
+.speed-11 {
+    transform: translateZ(-0px) scale(1.5) skew(10deg);
+}
+
+.speed-12 {
+    transform: translateZ(-0px) scale(1);
+}
+
+/*------elke stukje tekst krijgt zijn eigen positie en kleur toegewzen-----*/
+/*------BRON: https://codepen.io/erlswtshrt/pen/MQOwqa-----*/
+.object {
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 9.25em;
+    width: 23em;
+}
+
+.object-1 {
+    margin-top: 6.25em;
+    background-color: #e6027f;
+    box-shadow: 4px 4px 0 rgba(237, 237, 237, 0.5);
+
+}
+
+.object-2 {
+    margin-top: 12.50em;
+    background-color: #f39200;
+    box-shadow: 4px 4px 0 rgba(237, 237, 237, 0.5);
+}
+
+.object-3 {
+    margin-top: 18.75em;
+    background-color: #009fe3;
+    box-shadow: 4px 4px 0 rgba(237, 237, 237, 0.5);
+}
+
+.object-4 {
+    margin-top: 25em;
+    background-color: #bfd463;
+    box-shadow: 4px 4px 0 rgba(237, 237, 237, 0.5);
+    height: 14em;
+    font-size: 1.5em;
+}
+
+.object-5 {
+    margin-top: 31.25em;
+    background-color: #e6027f;
+    box-shadow: 4px 4px 0 rgba(237, 237, 237, 0.5);
+}
+
+.object-6 {
+    margin-top: 37.5em;
+    background-color: #0169b3;
+    box-shadow: 4px 4px 0 rgba(237, 237, 237, 0.5);
+}
+
+.object-7 {
+    margin-top: 43.75em;
+    background-color: #e6027f;
+    box-shadow: 4px 4px 0 rgba(237, 237, 237, 0.5);
+
+}
+
+.object-8 {
+    margin-top: 50em;
+    background-color: #f39200;
+    box-shadow: 4px 4px 0 rgba(237, 237, 237, 0.5);
+}
+
+.object-9 {
+    margin-top: 56.25em;
+    background-color: #009fe3;
+    box-shadow: 4px 4px 0 rgba(237, 237, 237, 0.5);
+}
+
+.object-10 {
+    margin-top: 9.50em;
+    background-color: #bfd463;
+    box-shadow: 4px 4px 0 rgba(237, 237, 237, 0.5);
+    font-size: 1.5em;
+    height: 16em;
+}
+
+.object-11 {
+    margin-top: 8.75em;
+    background-color: #0169b3;
+    box-shadow: 4px 4px 0 rgba(237, 237, 237, 0.5);
+}
+
+.object-12 {
+    margin-top: 7em;
+    background-color: #e6027f;
+    box-shadow: 4px 4px 0 rgba(237, 237, 237, 0.5);
+}
+
+.page-content {
+    height: 2000px;
+}
+
+
+/*------Resultaten pagina van de quiz-----*/
+
+.resultaten {
+    font-size: 0.8em;
+    padding: 1em;
+}
+
+.resultaten img {
+    height: 5rem;
+}
+
+.resultaten a {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.resultaten a:hover {
+    color: rgba(153, 37, 141, 1);
+    font-size: 0.9rem;
+}
+
+.account button {
+    background-color: rgba(153, 37, 141, 1);
+    padding: 0.5rem;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.6em;
+    font-weight: 600;
+    margin: 0.5em
+}
+
+.account {
+    display: flex;
+    justify-content: center;
+}
+
+/*----------Verder lezen pagina---------*/
+.verderlezen {
+    display: inline-flex;
+    background-color: rgba(239, 192, 48, 1);
+    font-weight: 500;
+}
+
+
+/*---------------footer---------------*/
+
+.footer {
+    margin-top: 0;
+    padding: 8px 8px;
+    border-radius: 10px;
+    background-color: rgba(239, 192, 48, 1);
+    font-size: 0.7em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    max-width: 10em;
+    margin-left: 40%;
+}
+
+/*---------------footer navigatie bij verhaal detail pagina---------------*/
+.footernav {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+
+}
+
+
+/*---------------responsive---------------*/
+
+/*---------bij verhaal detail pagina worden de content blokjes langer en minder breed zodat de tekst er nog in past-----*/
+@media (max-width: 33.438em) {
+
+    .object {
+        margin-left: 20%;
+        margin-right: 20%;
+        height: 16em;
+        width: 23em;
+    }
+
+    .object-9 {
+        height: 14em;
+    }
+
+    .speed-4 {
+        transform: translateZ(-4px) scale(5)skew(-10deg);
+    }
+
+    .object-4 {
+        font-size: 1.2em;
+        margin-top: 25em;
+        background-color: #bfd463;
+        box-shadow: 4px 4px 0 rgba(237, 237, 237, 0.5);
+    }
+
+    .object-10 {
+        height: 18em;
+    }
+
+    .container2 > img {
+        width: 100%;
+    }
+
+}
+
+/*---------de tekst van het filter veld gaat naast elkaar staan ipv onder elkaar-----*/
+
+@media (min-width: 65.938em) {
+
+    form > div {
+        display: flex;
+        justify-content: space-between;
+    }
+}

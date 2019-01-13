@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!-- FED HTML EN CSS eerste versie: Fenna Foole - studentnr 500783670 - klas212 - groep 4-->
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <title>Verhaal afsluiten</title>
+</head>
+
+<body>
+   <div> <img src="images/Comp%201_2.gif" alt="verder lezen" id="gif"></div>
+    <div class="wrapper">
+        <header>
+            <img src="images/WOW_logo_RGB-2.jpg" alt="WOW logo" class="logo">
+            <a href="nacht.html" alt="nacht modus" class="nacht"> <img class="nacht" src="images/Asset%208.svg" alt="nachtmodus">nacht modus</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">
+                            <img src="images/Asset%206.svg" alt="mijn reizen">
+                            Mijn reizen</a></li>
+                    <li><a href="verderlezenvol.html"><img src="images/Asset%209.svg" alt="verder lezen"> Verder lezen</a></li>
+                    <li><a href="favorieten.html"><img src="images/Asset%204.svg" alt="favorieten">Favorieten</a></li>
+                    <li><a href="downloads.html"> <img src="images/Asset%203.svg" alt="downloads">Downloads</a></li>
+                    <li> <a href="profiel.html"><img src="images/Asset%202.svg" alt="profiel">Profiel</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <section>
+                <h2>Op zoek naar leuke verhalen?</h2>
+                <h3>Laat je inspireren door je bestemming in 3 stappen</h3>
+
+                <form action="resultatenTest.html">
+                    <label for="bestemming">Waar ga je heen?</label>
+                    <input type="text" id="bestemming" placeholder="New York, London" required>
+
+                    <fieldset>
+                        <legend>Wat voor reis ga je maken?</legend>
+
+                        <input type="radio" id="zakenreis" name="soortreis">
+                        <label for="zakenreis"> Zakenreis</label>
+
+                        <input type="radio" id="citytrip" name="soortreis">
+                        <label for="citytrip"> City Trip </label>
+
+                        <input type="radio" id="strandvakantie" name="soortreis">
+                        <label for="strandvakantie"> Strandvakantie </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Welke boeken vind je leuk? Meerdere opties zijn mogelijk</legend>
+
+                        <input type="checkbox" id="thriller">
+                        <label for="thriller"> Thriller</label>
+
+                        <input type="checkbox" id="roman">
+                        <label for="roman"> Roman </label>
+
+                        <input type="checkbox" id="komedie">
+                        <label for="komedie"> Komedie </label>
+
+                        <input type="checkbox" id="detective">
+                        <label for="detective"> Detective </label>
+
+                        <input type="checkbox" id="fantasy">
+                        <label for="fantasy"> Fantasy </label>
+                    </fieldset>
+                    <input type="submit" value="Bekijk resultaten">
+                </form>
+            </section>
+
+            <section>
+
+                <h2>Bekijk alle 99 verhalen</h2>
+
+
+                <section>
+                    <h3 class="filterbutton">
+                        <button> <img src="images/Asset%207.svg" alt="filteren">Filteren</button>
+                    </h3>
+                    <form action="resultatenFilter.html" class="hidden" id="filter">
+                        <div>
+                            <fieldset>
+                                <legend>Genres</legend>
+
+                                <input type="checkbox" id="thriller1">
+                                <label for="thriller1"> Thriller</label>
+
+                                <input type="checkbox" id="roman1">
+                                <label for="roman1"> Roman </label>
+
+                                <input type="checkbox" id="komedie1">
+                                <label for="komedie1"> Komedie </label>
+
+                                <input type="checkbox" id="detective1">
+                                <label for="detective1"> Detective </label>
+
+                                <input type="checkbox" id="fantasy1">
+                                <label for="fantasy1"> Fantasy </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>leestijd</legend>
+                                <input type="radio" id="5min" name="tijd">
+                                <label for="5min"> &#62;5 minuten</label>
+
+                                <input type="radio" id="510min" name="tijd">
+                                <label for="510min">5-10 minuten</label>
+
+                                <input type="radio" id="10min" name="tijd">
+                                <label for="10min"> &#60;10 minuten</label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Sorteer op</legend>
+                                <input type="radio" id="populariteit" name="sorteer">
+                                <label for="populariteit">Populariteit</label>
+
+                                <input type="radio" id="volgorde" name="sorteer">
+                                <label for="volgorde">Volgorde</label>
+
+                                <input type="radio" id="leestijd" name="sorteer">
+                                <label for="leestijd">Leestijd</label>
+                            </fieldset>
+                        </div>
+                        <input type="submit" value="Verwerk filter">
+                    </form>
+                </section>
+
+                <div class="verhalen">
+                    <article>
+
+                        <img src="images/kinderlied.png" alt="Verhaal 25 kinderlied">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+
+                        <h3>Verhaal #25 Kinderlied </h3>
+                        <span>Leestijd 1 min </span> <span>#Komedie</span>
+                        <p>
+                            Dit is het begin van het verhaal wat je hier krijgt te zien</p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+
+
+                    <article>
+                        <img src="images/26.nichterig.png">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+
+                        <h3>Verhaal #25 Kinderlied </h3>
+                        <span>Leestijd 1 min </span> <span>#Komedie</span>
+                        <p>
+                            Dit is het begin van het verhaal wat je hier krijgt te zien</p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+
+                    <article>
+
+                        <img src="images/vrijevers.png">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+
+                        <h3>Verhaal #25 Kinderlied </h3>
+                        <span>Leestijd 1 min </span> <span>#Komedie</span>
+                        <p>
+                            Dit is het begin van het verhaal wat je hier krijgt te zien</p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+
+
+                    <article>
+
+                        <img src="images/34.%20iPhone_Slordig.png">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+
+                        <h3>Verhaal #25 Kinderlied </h3>
+                        <span>Leestijd 1 min </span> <span>#Komedie</span>
+                        <p>
+                            Dit is het begin van het verhaal wat je hier krijgt te zien</p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+
+                    <article>
+
+                        <img src="images/procesmatig.png">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+
+                        <h3>Verhaal #25 Kinderlied </h3>
+                        <span>Leestijd 1 min </span> <span>#Komedie</span>
+                        <p>
+                            Dit is het begin van het verhaal wat je hier krijgt te zien</p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+
+                    <article>
+
+                        <img src="images/onrustig.png">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+
+                        <h3>Verhaal #25 Kinderlied </h3>
+                        <span>Leestijd 1 min </span> <span>#Komedie</span>
+                        <p>
+                            Dit is het begin van het verhaal wat je hier krijgt te zien</p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+
+                    <article>
+
+                        <img src="images/vaderzoon.png">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+
+                        <h3>Verhaal #25 Kinderlied </h3>
+                        <span>Leestijd 1 min </span> <span>#Komedie</span>
+                        <p>
+                            Dit is het begin van het verhaal wat je hier krijgt te zien</p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+
+                    <article>
+
+                        <img src="images/code.png">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+
+                        <h3>Verhaal #25 Kinderlied </h3>
+                        <span>Leestijd 1 min </span> <span>#Komedie</span>
+                        <p>
+                            Dit is het begin van het verhaal wat je hier krijgt te zien</p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h2> naar boven </h2>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+
+
+</body>
+
+
+</html>

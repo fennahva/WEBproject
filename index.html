@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- FED HTML EN CSS eerste versie: Fenna Foole - studentnr 500783670 - klas212 - groep 4-->
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <title>WOW air</title>
+</head>
+
+<body>
+    <a id="top"></a>
+    <div class="wrapper">
+        <header>
+            <img src="images/WOW_logo_RGB-2.jpg" alt="WOW logo" class="logo">
+            <a href="nacht.html" alt="nacht modus" class="nacht"> <img class="nacht" src="images/Asset%208.svg" alt="nachtmodus">nacht modus</a>
+            <nav>
+                <ul>
+                    <li><a href="resultaten.html">
+                            <img src="images/Asset%206.svg" alt="mijn reizen">
+                            Mijn reizen</a></li>
+                    <li><a href="verderlezen.html"><img src="images/Asset%205.svg" alt="verder lezen"> Verder lezen</a></li>
+                    <li><a href="favorieten.html"><img src="images/Asset%204.svg" alt="favorieten">Favorieten</a></li>
+                    <li><a href="downloads.html"> <img src="images/Asset%203.svg" alt="downloads">Downloads</a></li>
+                    <li> <a href="profiel.html"><img src="images/Asset%202.svg" alt="profiel">Profiel</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <section>
+                <h2>Op zoek naar leuke verhalen?</h2>
+                <h3>Laat je inspireren door je bestemming in 3 stappen</h3>
+
+                <form action="resultaten.html">
+                    <label for="bestemming">Waar ga je heen?</label>
+                    <input type="text" id="bestemming" placeholder="New York, London" required>
+
+                    <fieldset>
+                        <legend>Wat voor reis ga je maken?</legend>
+
+                        <input type="radio" id="zakenreis" name="soortreis">
+                        <label for="zakenreis"> Zakenreis</label>
+
+                        <input type="radio" id="citytrip" name="soortreis">
+                        <label for="citytrip"> City Trip </label>
+
+                        <input type="radio" id="strandvakantie" name="soortreis">
+                        <label for="strandvakantie"> Strandvakantie </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Welke boeken vind je leuk? Meerdere opties zijn mogelijk</legend>
+
+                        <input type="checkbox" id="thriller">
+                        <label for="thriller"> Thriller</label>
+
+                        <input type="checkbox" id="roman">
+                        <label for="roman"> Roman </label>
+
+                        <input type="checkbox" id="komedie">
+                        <label for="komedie"> Komedie </label>
+
+                        <input type="checkbox" id="detective">
+                        <label for="detective"> Detective </label>
+
+                        <input type="checkbox" id="fantasy">
+                        <label for="fantasy"> Fantasy </label>
+                    </fieldset>
+                    <input type="submit" value="Bekijk resultaten">
+                </form>
+            </section>
+
+            <section>
+                <h2>Bekijk alle 99 verhalen</h2>
+
+                <section>
+                    <h3 class="filterbutton">
+                        <button> <img src="images/Asset%207.svg" alt="filteren">Filteren</button>
+                    </h3>
+                    <form action="index.html" class="hidden" id="filter">
+                        <div>
+                            <fieldset>
+                                <legend>Genres</legend>
+
+                                <input type="checkbox" id="thriller1">
+                                <label for="thriller1"> Thriller</label>
+
+                                <input type="checkbox" id="roman1">
+                                <label for="roman1"> Roman </label>
+
+                                <input type="checkbox" id="komedie1">
+                                <label for="komedie1"> Komedie </label>
+
+                                <input type="checkbox" id="detective1">
+                                <label for="detective1"> Detective </label>
+
+                                <input type="checkbox" id="fantasy1">
+                                <label for="fantasy1"> Fantasy </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>leestijd</legend>
+                                <input type="radio" id="5min" name="tijd">
+                                <label for="5min"> &#62;5 minuten</label>
+
+                                <input type="radio" id="510min" name="tijd">
+                                <label for="510min">5-10 minuten</label>
+
+                                <input type="radio" id="10min" name="tijd">
+                                <label for="10min"> &#60;10 minuten</label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Sorteer op</legend>
+                                <input type="radio" id="populariteit" name="sorteer">
+                                <label for="populariteit">Populariteit</label>
+
+                                <input type="radio" id="volgorde" name="sorteer">
+                                <label for="volgorde">Volgorde</label>
+
+                                <input type="radio" id="leestijd" name="sorteer">
+                                <label for="leestijd">Leestijd</label>
+                            </fieldset>
+                        </div>
+                        <input type="submit" value="Verwerk filter">
+                    </form>
+                </section>
+                <div class="verhalen">
+                    <article>
+                        <img src="images/kinderlied.png" alt="Verhaal 25 kinderlied">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+                        <h3>Verhaal #25 Kinderlied </h3>
+                        <span>Leestijd 1 min </span> <span>#Komedie</span>
+                        <p>Molovichje ging op reis, tiereliereliere Molovichje ging op reis, tierelierelom Met z’n zoontje in de kar, tiereliereliere Met z’n zoontje in de kar,...</p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+                    <article>
+                        <img src="images/26.nichterig.png">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+                        <h3>Verhaal #26 Nichterig </h3>
+                        <span>Leestijd 3 min </span> <span>#Komedie</span>
+                        <p>Dus ik stap de bus uit, met mijn zoon in mijn wagen, en ik schrik me daar toch het apenlazarus zeg! Werkelijk heel de omgeving rond...</p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+                    <article>
+                        <img src="images/vrijevers.png">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+                        <h3>Verhaal #19 Vrije Versvorm </h3>
+                        <span>Leestijd 5 min </span> <span>#Roman</span>
+                        <p>Gemeenteblik Draaiende wielen stoppen Schimmen lopen van en naar Zoonlief droomt Over wat dan ook Het miezert en Wij zoeken tot wij vinden Stijloefeningen... </p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+                    <article>
+                        <img src="images/34.%20iPhone_Slordig.png">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+                        <h3>Verhaal #34 Iphone </h3>
+                        <span>Leestijd 10 min </span> <span>#Thriller</span>
+                        <p>Om een uur of 12 stapte ik op CS bus 21 uitomdat ik naar de Ipenbare Bibliotheek op weg was, waar ik Stijloefeningen van Q-No wilde lenen. Was ik al een tijdje naar op zoek naar... </p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+                    <article>
+                        <img src="images/procesmatig.png">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+                        <h3>Verhaal #21 Sonnet </h3>
+                        <span>Leestijd 10 min </span> <span>#Detective</span>
+                        <p>Bus 21, 12 uur, begin van de week Mijn zoon slaapt in zijn wagentje, en zo Ga ik op zoek naar Stijloefeningen van Queneau In de Openbare Bibliotheek In het Engels met een sexy Frans accent Vraagt een vrouw...</p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+                    <article>
+                        <img src="images/onrustig.png">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+                        <h3>Verhaal #93 Nico Dijkshoorn die Mart Smeets imiteert </h3>
+                        <span>Leestijd 15 min </span> <span>#Roman</span>
+                        <p>Noot vooraf: de heer Nico Dijkshoorn hecht eraan te melden dat hij onderstaande niet heeft geschreven...</p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+                    <article>
+                        <img src="images/vaderzoon.png">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+                        <h3>Verhaal #55 Van vader tot zoon </h3>
+                        <span>Leestijd 12 min </span> <span>Roman</span>
+                        <p>Je ligt vredig in je wagen te slapen als ik de bus uitstap op die druilerige dag in februari van het jaar 2011. In je groene wagentje...</p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+                    <article>
+                        <img src="images/code.png">
+                        <div class="iconen">
+                            <button class="favoriet"></button>
+                            <button class="download"></button>
+                        </div>
+                        <h3>Verhaal #87 Code </h3>
+                        <span>Leestijd 1 min </span> <span>#Detective</span>
+                        <p>Kraak de code en win een romantisch etentje met de verwarde man. In kwellende situaties toveren apen pennenvruchten uit...</p>
+                        <a href="/verhaal2.html">Lees verhaal</a>
+                    </article>
+                </div>
+                <nav>
+                    <ol>
+                        <li> <a href="#">Volgende pagina</a></li>
+                    </ol>
+                </nav>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <a href="#top">Naar Boven</a>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
